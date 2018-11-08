@@ -1,6 +1,6 @@
 import AuthService from "../services/AuthService";
 
-const DOMAIN = "https://recipe-app-text.herokuapp.com/"
+const DOMAIN = "https://salty-shelf-93882.herokuapp.com/"
 // const DOMAIN = "http://localhost:3001";
 const Auth = new AuthService();
 
