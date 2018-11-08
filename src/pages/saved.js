@@ -147,9 +147,9 @@ class Saved extends Component {
           </div>
         ) : (
           <div>
-            <h3 className="empty-saved-page">
-              You Do Not Have Any Saved Recipes
-            </h3>
+            <p className="empty-saved-page">
+              You Don't Have Any Saved Recipes
+            </p>
           </div>
         )}
       </Page>

@@ -23,6 +23,19 @@
 }
 
 
+/* /////////////////////////////////Login/////////////////////////////// */
+.login-form-container{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form-button{
+  width: 100px;
+  margin: 0 200px 0 200px;
+  background-color: #B2DB66;
+}
+/* /////////////////////////////////Login/////////////////////////////// */
 
 
 
@@ -225,6 +238,26 @@
   height: 30px;
 }
 /* /////////////////////////////////saved/////////////////////////////// */
+/* /////////////////////////////////account/////////////////////////////// */
+.account-container{
+  display: flex;
+  justify-content: center;
+
+}
+.account-block{
+  width: 180px;
+  height: 180px;
+  background-color: #F7F5F5;
+  border: solid 15px #B2DB66;
+  margin: 10px 0 10px 0;
+}
+
+.account-flex-items p{
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+/* /////////////////////////////////account/////////////////////////////// */
 
 
 .title{
@@ -248,8 +281,19 @@
 
 }
 
+.form-container-group{
+  display: grid;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 
+label{
+  font-weight: bold;
+}
 
+.form-group{
+width: 500px;
+}
 
 button:hover {
   opacity: .7;
@@ -282,8 +326,10 @@ button:hover {
   right: 50%;}
 
 .empty-saved-page{
-  padding-left: 35%;
-  padding-top: 10%;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 40px;
+  font-size: 30px;
 }
 
 .footer{

@@ -55,9 +55,26 @@ class Header extends Component {
             </NavLink>
           </div>
         ) : (
-          <NavItem>
-            <Link to="/">Login</Link> | <Link to="/register">Register</Link>
-          </NavItem>
+          <div className="nav-links">
+            <NavLink
+              to="/"
+              activeStyle={{
+                color: "black"
+              }}
+            >
+              Login
+            </NavLink>
+            <NavLink
+              to="/register"
+              activeStyle={{
+                fontWeight: "bold",
+                color: "#B2DB66"
+              }}
+            >
+              Register
+            </NavLink>
+          </div>
+
         )}
       </div>
     );

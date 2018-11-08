@@ -73,6 +73,11 @@ class NewRecipes extends Component {
     let array = [];
     return getPantryItems(id)
       .then(resp => {
+        console.log(resp);
+        if (resp === null){
+          //hack
+          return "chicken"
+        } else
         array = [resp.proteins, resp.veggies];
         array = array.join();
         return array;

@@ -28,11 +28,10 @@ class LoginForm extends Component {
 
     render() {
        return (
+         <div className="login-form-container">
             <form onSubmit={this.handleFormSubmit.bind(this)}>
-            <h1>Welcome to the Login Page!</h1>
                 <FormGroup>
 
-                    <ControlLabel>Email</ControlLabel>
                     <FormControl
                         type='text'
                         name='email'
@@ -40,7 +39,6 @@ class LoginForm extends Component {
                         placeholder="Email"
                         onChange={this.handleChange.bind(this)}/><br/>
 
-                    <ControlLabel>Password</ControlLabel>
                     <FormControl
                         type='password'
                         name='password'
@@ -48,9 +46,10 @@ class LoginForm extends Component {
                         placeholder="Password"
                         onChange={this.handleChange.bind(this)}/><br/>
 
-                    <Button bsStyle="danger" type='submit' value='submit'>Login</Button>
+                      <Button className="login-form-button" bsStyle="danger" type='submit' value='submit'>Login</Button>
                     </FormGroup>
                 </form>
+                </div>
 
         )
     }
