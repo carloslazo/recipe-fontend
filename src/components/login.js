@@ -29,10 +29,10 @@ class LoginForm extends Component {
     render() {
        return (
          <div className="login-form-container">
-            <form onSubmit={this.handleFormSubmit.bind(this)}>
-                <FormGroup>
-
+            <form className="login-form-form" onSubmit={this.handleFormSubmit.bind(this)}>
+                <div className="form-width-flex">
                     <FormControl
+                        className="control"
                         type='text'
                         name='email'
                         value={this.state.value}
@@ -40,14 +40,14 @@ class LoginForm extends Component {
                         onChange={this.handleChange.bind(this)}/><br/>
 
                     <FormControl
+                      className="control" 
                         type='password'
                         name='password'
                         value={this.state.value}
                         placeholder="Password"
-                        onChange={this.handleChange.bind(this)}/><br/>
-
-                      <Button className="login-form-button" bsStyle="danger" type='submit' value='submit'>Login</Button>
-                    </FormGroup>
+                        onChange={this.handleChange.bind(this)}/>
+                        <Button className="login-form-button" bsStyle="danger" type='submit' value='submit'>Login</Button>
+                      </div>
                 </form>
                 </div>
 

@@ -31,9 +31,24 @@
   align-items: center;
 }
 .login-form-button{
-  width: 100px;
-  margin: 0 200px 0 200px;
+  width: 100%;
   background-color: #B2DB66;
+  margin: 20px 0 20px 0;
+}
+.login-form-form{
+  width: 500px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 5px #ccc;
+  height: 400px;
+  justify-content: center;
+}
+
+.control{
+  width: 400px;
+}
+.form-width-flex{
+  margin-top: 100px;
 }
 /* /////////////////////////////////Login/////////////////////////////// */
 
