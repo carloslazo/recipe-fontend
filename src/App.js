@@ -10,7 +10,6 @@ import Profile from "./pages/profile";
 import "./App.css";
 
 
-require("dotenv").config();
 
 class App extends Component {
   render() {
