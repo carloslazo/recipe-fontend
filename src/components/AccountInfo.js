@@ -20,19 +20,18 @@ class AccountInfo extends Component {
     return (
       <div className="account-container">
         <div className="account-flex-items">
-        <div className="account-block"/>
+          <div className="account-block" />
 
-        <p> <b>Name</b>: {this.state.user.first_name} {this.state.user.last_name}</p>
+          <p>
+            {" "}
+            <b>Name</b>: {this.state.user.first_name}{" "}
+            {this.state.user.last_name}
+          </p>
 
-        <p> <b>Email</b>: {this.state.user.email} </p>
-
-        <p> <b>Phone</b>: {this.state.user.phone} </p>
-
-        <p> <b>City</b>: {this.state.user.city} </p>
-
-        <p> <b>State</b>: {this.state.user.state}</p>
-
-        <p> <b>Zip</b>: {this.state.user.zip}</p>
+          <p>
+            {" "}
+            <b>Email</b>: {this.state.user.email}{" "}
+          </p>
         </div>
       </div>
     );

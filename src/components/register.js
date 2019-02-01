@@ -13,10 +13,6 @@ class RegisterForm extends Component {
           first_name: "",
           last_name: "",
           email: "",
-          phone: "",
-          city: "",
-          state: "",
-          zip: "",
           password: "",
           password_confirmation: ""
         }
@@ -70,38 +66,6 @@ class RegisterForm extends Component {
               onChange={this.handleChange.bind(this)}
             />
 
-            <ControlLabel>Phone</ControlLabel>
-            <FormControl
-              type="text"
-              name="phone"
-              value={this.state.value}
-              onChange={this.handleChange.bind(this)}
-            />
-
-            <ControlLabel>City</ControlLabel>
-            <FormControl
-              type="text"
-              name="city"
-              value={this.state.value}
-              onChange={this.handleChange.bind(this)}
-            />
-
-            <ControlLabel>State</ControlLabel>
-            <FormControl
-              type="text"
-              name="state"
-              value={this.state.value}
-              onChange={this.handleChange.bind(this)}
-            />
-
-            <ControlLabel>Zip Code</ControlLabel>
-            <FormControl
-              type="text"
-              name="zip"
-              value={this.state.value}
-              onChange={this.handleChange.bind(this)}
-            />
-
             <ControlLabel>Password</ControlLabel>
             <FormControl
               type="password"
@@ -110,7 +74,15 @@ class RegisterForm extends Component {
               onChange={this.handleChange.bind(this)}
             />
 
-          <Button style={{margin: "10px 0 5px 0", backgroundColor: "#B2DB66", color: "white"}}type="submit" value="submit">
+            <Button
+              style={{
+                margin: "10px 0 5px 0",
+                backgroundColor: "#B2DB66",
+                color: "white"
+              }}
+              type="submit"
+              value="submit"
+            >
               Register
             </Button>
           </FormGroup>
